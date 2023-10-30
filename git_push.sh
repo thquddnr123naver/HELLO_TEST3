@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # ReadCSV.sh 스크립트 안에 GET_USER_DATA 함수를 불러옵니다
-source /home/ubuntu/ACG/ReadCSV/ReadCSV.sh
+#source /home/ubuntu/ACG/ReadCSV/ReadCSV.sh
+source /home/ubuntu/ACG/main.sh
 
 GITHUB_USERNAME=$(GET_USER_DATA 0003 2)
 GITHUB_TOKEN=$(GET_USER_DATA 0003 3)
