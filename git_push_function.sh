@@ -27,8 +27,8 @@ function CLONE_GIT_REPO() {
     touch test.md
     git add .
     git commit -m "Initial commit"
-    git remote add origin https://github.com/$GITHUB_USERNAME/$REPO_NAME.git
-    git remote set-url origin https://$GITHUB_USERNAME@github.com/$GITHUB_USERNAME/$REPO_NAME.git
+    git remote add origin "https://github.com/$GITHUB_USERNAME/$REPO_NAME.git"
+    git remote set-url origin "https://$GITHUB_USERNAME@github.com/$GITHUB_USERNAME/$REPO_NAME.git"
     git branch -M main
     git push -u origin main
 }
