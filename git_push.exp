@@ -1,20 +1,9 @@
 #!/usr/bin/expect -f
 
-# ReadCSV.sh 스크립트 안에 GET_USER_DATA 함수를 불러옵니다
-set SCRIPT_DIR "/home/ubuntu/ACG/main.sh"
-source $SCRIPT_DIR
+set GITHUB_USERNAME "thquddnr123naver"
+set GITHUB_TOKEN "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"
 
-INPUT_ID [GET_USER_DATA 0003 2]
-GITHUB_USERNAME [GET_USER_DATA 0003 2]
-GITHUB_TOKEN [GET_USER_DATA 0003 3]
-
-# 1: id
-# 2: username
-# 3 : token
-# 4 : email
-# git_push.exp
-
-CLONE_GIT_REPO 0003
+spawn ./git_push.sh
 
 expect "Password for " {
   send -raw "$GITHUB_TOKEN\r"
