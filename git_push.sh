@@ -12,7 +12,7 @@ echo ${GITHUB_TOKEN}
 # 3 : token
 # 4 : email
 # Repository name
-REPO_NAME="HELLO_BRO"
+REPO_NAME="HELLO_TEST3"
 
 # Create the repository on GitHub using the PAT
 curl -u "$GITHUB_USERNAME:$GITHUB_TOKEN" https://api.github.com/user/repos -d "{\"name\":\"$REPO_NAME\"}"
